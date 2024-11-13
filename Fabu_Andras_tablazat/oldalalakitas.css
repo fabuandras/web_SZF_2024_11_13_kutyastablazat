@@ -1,0 +1,92 @@
+/* itt készítsd el a táblán látható mintának megfelelően az oldalt.
+
+töréspont: 700px-nél, a navigáció article fölé kerüljön és az aside az article  alá */
+
+/* A menüpontok ne legyenek aláhúzva,
+ne legyen felsorolás, ha fölé viszem az egeret,
+akkor változzon a háttérszíne (li) /*
+
+/* Hozzd létre azokat a html-ket, amiket a menüben leírtunk és készítsd el a mintának megfelelő táblázatot az article tagbe!
+Új táblázatformázás cs kell bele, de ugyanez az oldalalakitas.css */
+
+header, nav, article, aside, footer {
+    border: 1px dotted gray;
+}
+
+
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+h2 {
+    color:red;
+}
+
+a {
+    text-decoration: none;
+    color: darkorange;
+    background-color: brown;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
+
+a:hover {
+    color: brown;
+    background-color: beige;
+}
+
+li {
+    padding: 20px;
+}
+
+/* oldalalakítás */
+main {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-areas:
+    "h h h"
+    "n a as"
+    "f f f";
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+article {
+    grid-area: a;
+}
+
+aside {
+    grid-area: as;
+}
+
+footer {
+    grid-area: f;
+}
+
+
+@media screen and (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "as"
+        "f";
+    }
+}

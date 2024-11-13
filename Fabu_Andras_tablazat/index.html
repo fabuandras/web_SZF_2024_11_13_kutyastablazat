@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="táblázatok" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Fabu András" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="oldalalakitas.css" />
+    <title>Fabu András</title>
+</head>
+<body>
+     <main>
+        <header>
+            <h1>Táblázatok</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">*Közös munka</a></li>
+                <li><a href="kutyas.html">Kutyás táblázat</a></li>
+                <li><a href="sakk.html">Sakktábla</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Minta táblázat</h2>
+            <div class="responzivtablazat">
+                <table>
+                    <thead>
+                        <tr id="sor">
+                            <th>Oszlop 1</th>
+                            <th>Oszlop 2</th>
+                            <th>Oszlop 3</th>
+                            <th>Oszlop 4</th>
+                            <th>Oszlop 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="sor1">
+                            <td>1. sor 1. cella</td>
+                            <td colspan="2" class="osszevont">1. sor 2. cella &
+                                1. sor 2. cella összevonva</td>
+                            <td>1. sor 4. cella</td>
+                            <td>1. sor 5. cella</td>
+                        </tr>
+                        <tr id="sor2">
+                            <td>2. sor 1. cella</td>
+                            <td>2. sor 2. cella</td>
+                            <td id="oszlop3">2. sor 3. cella</td>
+                            <td id="oszlop4" rowspan="2" class="osszevont">2. sor 4. cella 3. sor 4. cella összevonva</td>
+                            <td id="oszlop5">2. sor 5. cella</td>
+                        </tr>
+                        <tr id="sor3">
+                            <td>3. sor 1. cella</td>
+                            <td>3. sor 2. cella</td>
+                            <td>3. sor 3. cella</td>
+                            <td>3. sor 5. cella</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <aside>
+            <p>Mai napi jó kívánság: <span>Legyen szép napod!</span></p>
+        </aside>
+        <footer>
+            <p>Fabu András</p>
+        </footer>
+     </main>
+</body>
+</html>

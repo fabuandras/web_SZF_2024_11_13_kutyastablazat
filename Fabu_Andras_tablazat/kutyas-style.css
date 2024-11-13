@@ -1,0 +1,61 @@
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table, td {
+    border-bottom: 1px solid gray;
+    border-collapse: collapse; /* cellák közti rések eltüntetése */
+}
+
+th {
+    border-bottom: 1px solid gray;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+th {
+    color: brown;
+}
+
+#hatter {
+    background-color: white;
+}
+
+tr:nth-child(odd) { /* 3. sor legyen színezve | (odd) minden páratlan */
+    background-color: lightgray;
+}
+
+.osszevont {
+    background-color: greenyellow;
+}
+
+.responzivtablazat {
+    width: 100%;
+    overflow-x: scroll; /* vízszintesen scrollozható lesz a táblázat */
+}
+
+aside {
+    text-align: center;
+}
+
+aside>p {
+    color: brown;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
